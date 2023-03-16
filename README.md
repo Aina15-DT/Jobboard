@@ -1,1 +1,5 @@
-# It is better to use Python 3.9 for this project
+## ABOUT 
+It is a job management based on FastAPI
+
+## REQUIREMENTS
+python 3.9
