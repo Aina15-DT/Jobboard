@@ -1,0 +1,22 @@
+fastapi
+uvicorn
+httpx
+
+# for databases
+sqlalchemy
+psycopg2-binary==2.8.6
+
+# for env var
+python-dotenv
+
+# for email validation
+pydantic[email]
+
+#hashing
+passlib[bcrypt]
+
+# for testing
+
+pytest
+requests
+testfixtures

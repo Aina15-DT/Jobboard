@@ -1,0 +1,27 @@
+version: '3'
+services:
+  
+  postgres:
+    container_name: postgres_db
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Xendercage15
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-db:/data/postgres
+    ports:
+      - "5432:5432"
+
+  core_api:
+    build:  .
+    container_name: "core-api-container"
+    ports:
+        - "8000:15400"
+    volumes:
+        - ./backend/:/app
+    
+
+volumes:
+  postgres-db:
+    driver: local
